@@ -17,7 +17,7 @@ const getBasePath = () => {
 const data: ISiteMetadataResult = {
   siteTitle: 'Running Page',
   siteUrl: 'https://itrunner.cn',
-  logo: 'assets/icon.jpg',
+  logo: 'images/icon.jpg',
   description: 'Personal site and blog',
   navLinks: [
     {
