@@ -2198,4 +2198,9 @@ export const chinaCities: ICity[] = [
     name: '澳门特别行政区',
     province: '82',
   },
+  {
+    code: '830000',
+    name: '普吉岛',
+    province: '99',
+  },
 ];

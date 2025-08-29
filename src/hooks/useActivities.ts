@@ -10,10 +10,13 @@ const standardizeCountryName = (country: string): string => {
   if (country.includes('英国')) {
     return '英国';
   }
+  if (country.includes('泰国')) {
+    return '泰国';
+  }
   if (country.includes('印度尼西亚')) {
     return '印度尼西亚';
   } else {
-    return country;
+    return '中国';
   }
 };
 

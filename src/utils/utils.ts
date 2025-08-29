@@ -105,7 +105,7 @@ const scrollToMap = () => {
 const extractCities = (str: string): string[] => {
   const locations = [];
   let match;
-  const pattern = /([\u4e00-\u9fa5]{2,}(市|自治州|特别行政区|盟|地区))/g;
+  const pattern = /([\u4e00-\u9fa5]{2,}(市|自治州|特别行政区|盟|地区|岛))/g;
   while ((match = pattern.exec(str)) !== null) {
     locations.push(match[0]);
   }
@@ -196,6 +196,7 @@ const locationForRun = (
 
   const r = { country, province, city, coordinate };
   locationCache.set(run.run_id, r);
+  console.log(r)
   return r;
 };
 
