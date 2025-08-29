@@ -196,7 +196,6 @@ const locationForRun = (
 
   const r = { country, province, city, coordinate };
   locationCache.set(run.run_id, r);
-  console.log(r)
   return r;
 };
 
