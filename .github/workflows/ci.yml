@@ -30,7 +30,7 @@ jobs:
       - name: Run GPX sync test
         run: |
           # make sure the gpx_sync.py script is executable
-          python run_page/gpx_sync.py
+          python run_page/garmin_sync.py ${{ secrets.GARMIN_SECRET_STRING_CN }} --is-cn --only-run
 
       - name: Check formatting (black)
         run: black . --diff --color && black . --check
